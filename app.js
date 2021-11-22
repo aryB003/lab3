@@ -24,6 +24,10 @@ app.get('/', (req, res) => {
 app.get('/contacts', (req, res) => {
     res.render('contacts'); 
    });
-   
+
+//route for register
+app.get('/register', (req, res) => {
+    res.render('register'); 
+   })
 
 
