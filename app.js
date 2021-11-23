@@ -34,3 +34,8 @@ app.get('/register', (req, res) => {
 app.get("/login", (req, res) => {
     res.render('login');
 });
+
+//pass requests to the router middleware
+const router = require('./routes/apis'); 
+app.use(router);
+
