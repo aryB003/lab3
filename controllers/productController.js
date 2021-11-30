@@ -21,7 +21,7 @@ const getProductsByCategory = (request, response) => {
     catalogServices.searchCategoryService(category, function(err, rows) {
         response.json(rows);
         response.end();
-    });
+        });
 };
 
 module.exports = {
